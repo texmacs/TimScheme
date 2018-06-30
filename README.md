@@ -15,3 +15,6 @@ After investigations on R7RS, it may be too hard to make it work without modifyi
 1. `inherit-modules`: load a list of modules and export the public symbols
 2. `texmacs-module`: define the name, the dependencies of a module
 3. `define-public` and `define-public-macro`: the functions and macros that can be exported
+
+# Implementations
+S7, Chez, Chibi
