@@ -11,17 +11,22 @@ set (Kernel_Include_Dirs
   ${KERNEL_SOURCE_DIR}/src/Kernel/Types/
   ${KERNEL_SOURCE_DIR}/src/System/Misc/
   ${KERNEL_SOURCE_DIR}/src/System/Files/
-  ${KERNEL_SOURCE_DIR}/src/Data/String/
+  ${KERNEL_SOURCE_DIR}/src/System/Classes/
+  ${KERNEL_SOURCE_DIR}/src/System/Boot/
+  ${KERNEL_SOURCE_DIR}/src/Data/Convert/
   ${KERNEL_SOURCE_DIR}/src/Data/Drd/
+  ${KERNEL_SOURCE_DIR}/src/Data/String/
   ${KERNEL_SOURCE_DIR}/src/Data/Tree/
   ${KERNEL_SOURCE_DIR}/src/Scheme/
   ${KERNEL_SOURCE_DIR}/src/Scheme/Guile
   ${KERNEL_SOURCE_DIR}/src/Scheme/Scheme
+  ${KERNEL_SOURCE_DIR}/src/Plugins
 )
 
 file (GLOB_RECURSE Kernel_SRCS
   "${KERNEL_SOURCE_DIR}/src/Kernel/*.cpp"
   "${KERNEL_SOURCE_DIR}/src/System/*.cpp"
+  "${KERNEL_SOURCE_DIR}/src/Plugins/*.cpp"
   "${KERNEL_SOURCE_DIR}/src/Data/*.cpp"
 )
 
